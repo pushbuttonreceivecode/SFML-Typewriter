@@ -13,7 +13,7 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800,600,32), "NEUREXUS Profiles", sf::Style::Default);
+    sf::RenderWindow window(sf::VideoMode(800,600,32), "Typewriter", sf::Style::Default);
     sf::Event e;
 
     std::vector<EnemyProfileData> myData = initializeEnemyProfileData();
@@ -90,7 +90,6 @@ int main()
         myTypewriter.setString(myInfo[currItem]);
         myTypewriter.write();
 
-        //show number of images in window title
         window.setTitle("Enemies: " + std::to_string(myInfo.size()) + " -------- Current Enemy: " + myData[currItem].name);
 
         window.clear();
