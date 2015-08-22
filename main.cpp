@@ -27,7 +27,6 @@ int main()
 
     std::size_t currItem = 0;
     std::size_t maxIter = myInfo.size()-1;
-    std::cout<<maxIter<<std::endl;
 
     sf::Font myfont;
     if(!myfont.loadFromFile("resources/fonts/contb.ttf"))
